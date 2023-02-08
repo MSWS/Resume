@@ -1,0 +1,157 @@
+% resume.tex
+% sample template copied from https://web.archive.org/web/20150807054721/http://www.toofishes.net/media/extra/sample-resume.pdf
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+% \newcommand{\CPP}
+% {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Isaac K. Boaz}}
+
+    \ \ Seattle, WA\ \ \textbullet
+    \ \ (208) 473-6497\ \ \textbullet
+    \ \ isaac.k.boaz@gmail.com
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+
+\begin{itemize}
+    \parskip=0.1em
+
+    \item
+          \headerrow
+          {\textbf{Aramark}}
+          {\textbf{Bellingham, WA}}
+          \\
+          \headerrow
+          {\emph{Student Manager}}
+          {\emph{08/2022 -- Present}}
+          \begin{itemize*}
+              \item Opened and closed dining halls.
+              \item Completed necessary bookkeeping and till counting to ensure accurate accounting.
+              \item Oversaw students ensuring breaks and tasks were completed in a timely fashion.
+              \item Filled out daily temperature and food waste logs.
+              \item Stepped in where needed to fill for empty positions, student breaks, busy stations, etc.
+          \end{itemize*}
+
+    \item
+          \headerrow
+          {\textbf{Home Depot}}
+          {\textbf{Seattle, WA}}
+          \\
+          \headerrow
+          {\emph{Customer Service Representative}}
+          {\emph{04/2021 – 01/2022}}
+          \begin{itemize*}
+              \item Represented first level of contact for customer issues, special orders, and merchandise returns.
+              \item Handled cash, card, and online sales both in person and over the phone.
+              \item Contacted and worked with vendors to resolve customer issues or pending orders.
+          \end{itemize*}
+
+    \item
+          \headerrow
+          {\textbf{EdgeGamers Organization}}
+          {\textbf{www.edgegamers.com}}
+          \\
+          \headerrow
+          {\emph{Technical Manager, Volunteer}}
+          {\emph{2022 -- Present}}
+          \begin{itemize*}
+              \item Managed and maintained multiple game servers, docker containers, boxes, and front-end Xenforo sites.
+              \item Implemented GitLab CI to streamline development within Docker instances.
+              \item Created projects varying from Source plugins to Discord bots, utilizing languages including C, TypeScript, and Python.
+              \item Worked with a team to ensure tasks, goals, and issues were completed in a timely manner.
+          \end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+    \parskip=0.1em
+
+    \item
+          \headerrow
+          {\textbf{Western Washington University}}
+          {\textbf{Bellingham, WA}}
+          \\
+          \headerrow
+          {\emph{College of Science and Engineering, B.S. Computer Science}}
+          {\emph{2022 -- 2024}}
+          \begin{itemize*}
+              \item Minors in Mathematics.
+              \item Expected Graduation of 2024.
+              \item Expanded tech stack to include \LaTeX, GitHub Codespaces, and Remote SSH Development.
+          \end{itemize*}
+    \item
+          \headerrow
+          {\textbf{South Seattle College}}
+          {\textbf{Seattle, WA}}
+          \\
+          \headerrow
+          {\emph{College of Science and Engineering, A.S. Computer Science}}
+          {\emph{2022}}
+          \begin{itemize*}
+              \item Graduated 2022 with a 3.36 GPA.
+          \end{itemize*}
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Core Technical Skills}
+
+\begin{indentsection}{\parindent}
+    \hyphenpenalty=1000
+    \begin{description*}
+        \item[Languages:]
+        C, C\#, CI/CD, Docker, Git, Java, JavaScript, \LaTeX, Python, SQL
+        \item[GitHub:] https://github.com/MSWS
+        \item[Website:] https://msws.xyz
+    \end{description*}
+\end{indentsection}
+
+\end{document}
