@@ -1,6 +1,6 @@
 % resume.tex
 % sample template copied from https://web.archive.org/web/20150807054721/http://www.toofishes.net/media/extra/sample-resume.pdf
-% vim:set ft=tex spell:
+% vim:set ft=tex spell:35535
 
 \documentclass[10pt,letterpaper]{article}
 \usepackage[letterpaper,margin=0.75in]{geometry}
@@ -9,6 +9,9 @@
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{tgpagella}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 
@@ -39,6 +42,9 @@
 % make "C++" look pretty when used in text by touching up the plus signs
 % \newcommand{\CPP}
 % {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+\definecolor{customUrlColor}{HTML}{0c0d4c}
+\hypersetup{colorlinks=true, allcolors=customUrlColor}
 
 % and the actual content starts here
 \begin{document}
@@ -92,7 +98,7 @@
     \item
           \headerrow
           {\textbf{EdgeGamers Organization}}
-          {\textbf{www.edgegamers.com}}
+          {\textbf{\href{https://www.edgegamers.com}{www.edgegamers.com}}}
           \\
           \headerrow
           {\emph{Technical Manager, Volunteer}}
@@ -125,7 +131,7 @@
           {\emph{2022 -- 2024}}
           \begin{itemize*}
               \item Minor in Mathematics.
-              \item Expected Graduation of 2024.
+              \item Expected Graduation of 2024, current GPA 3.54.
               \item Expanded work stack to include \LaTeX, GitHub Codespaces, and Remote SSH Development.
           \end{itemize*}
     \item
@@ -150,21 +156,21 @@
     \parskip=0.1em
 
     \item
-        \headerrow
-        {\textbf{Server Statistics}}
-        {https://github.com/MSWS/JavaStats}
-        \begin{description*}
-            \item Java Web Application using the Spring Framework to automatically post server statistics.
-            \item Utilized Java, AWS S3 for storage, Spring, and HTML. Originally hosted using Heroku.
-        \end{description*}
+          \headerrow
+          {\textbf{Homelab}}
+          {\href{https://github.com/MSWS/Homelab}{https://github.com/MSWS/Homelab}}
+          \begin{description*}
+              \item Self-hosted homelab using proxmox to host sevices from uptime-kuma, code-server, wakapi, and more.
+              \item Utilized Docker, Composes, Cloudflared Tunneling, DNS, and more.
+          \end{description*}
     \item
-    \headerrow
-        {\textbf{TamperMonkey Scripts}}
-        {https://github.com/MSWS/eGOMonkey}
-        \begin{description*}
-            \item TypeScript TamperMonkey browser scripts to enhance website functionality and automate tedious tasks.
-            \item Utilized TypeScript, ESLinting, and GitHub Actions for CI/CD.
-        \end{description*}
+          \headerrow
+          {\textbf{Server Statistics}}
+          {\href{https://github.com/MSWS/JavaStats}{https://github.com/MSWS/JavaStats}}
+          \begin{description*}
+              \item Java Web Application using the Spring Framework to automatically post server statistics.
+              \item Utilized Java, AWS S3 for storage, Spring, and HTML. Originally hosted using Heroku.
+          \end{description*}
 \end{itemize}
 
 % \hrule
@@ -175,10 +181,10 @@
 \begin{indentsection}{\parindent}
     \hyphenpenalty=1000
     \begin{description*}
-        \item[Languages:]
-        C, C\#, CI/CD, Docker, Git, Java, JavaScript, \LaTeX, Python, SQL, Google, StackOverflow
-        \item[GitHub:] https://github.com/MSWS
-        \item[Website:] https://msws.xyz
+        \item[Services:]
+        C\#, Docker, Git, Google, Java, JavaScript / TypeScript, \LaTeX, Python, SQL, StackOverflow
+        \item[GitHub:] \href{https://github.com/MSWS}{https://github.com/MSWS}
+        \item[Website:] \href{https://msws.xyz}{https://msws.xyz}
     \end{description*}
 \end{indentsection}
 
