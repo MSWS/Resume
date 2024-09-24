@@ -1,6 +1,5 @@
 % resume.tex
 % sample template copied from https://web.archive.org/web/20150807054721/http://www.toofishes.net/media/extra/sample-resume.pdf
-% vim:set ft=tex spell:35535
 
 \documentclass[10pt,letterpaper]{article}
 \usepackage[letterpaper,margin=0.75in]{geometry}
@@ -15,8 +14,6 @@
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 
-% indentsection style, used for sections that aren't already in lists
-% that need indentation to the level of all text in the document
 \newenvironment{indentsection}[1]%
 {\begin{list}{}%
 	{\setlength{\leftmargin}{#1}}%
@@ -24,7 +21,6 @@
 }
 {\end{list}}
 
-% opposite of above; bump a section back toward the left margin
 \newenvironment{unindentsection}[1]%
 {\begin{list}{}%
 	{\setlength{\leftmargin}{-0.5#1}}%
@@ -32,21 +28,15 @@
 }
 {\end{list}}
 
-% format two pieces of text, one left aligned and one right aligned
 \newcommand{\headerrow}[2]
 {\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
 	#1 &
 	#2 \\
 \end{tabular*}}
 
-% make "C++" look pretty when used in text by touching up the plus signs
-% \newcommand{\CPP}
-% {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
-
 \definecolor{customUrlColor}{HTML}{0c0d4c}
 \hypersetup{colorlinks=true, allcolors=customUrlColor}
 
-% and the actual content starts here
 \begin{document}
 
 \begin{center}
@@ -74,10 +64,10 @@
           {\emph{Software Engineering Intern}}
           {\emph{06/2024 -- 09/2024}}
           \begin{itemize*}
-                \item Contributed to the development of a Golang-based secrets manager.
-                \item Identified, prepared, and deployed Windows agents for the secrets manager.
-                \item Created shell and Azure DevOps scripts to automate releases and workflows.
-                \item Worked with a Scrum team to ensure tasks were completed in a timely manner.
+              \item Contributed to the development of a Golang-based secrets manager.
+              \item Identified, prepared, and deployed Windows agents for the secrets manager.
+              \item Created shell and Azure DevOps scripts to automate releases and workflows.
+              \item Worked with a Scrum team to ensure tasks were completed in a timely manner.
           \end{itemize*}
 
     \item
@@ -87,7 +77,7 @@
           \\
           \headerrow
           {\emph{Teacher Assistant}}
-          {\emph{01/2024 -- Present}}
+          {\emph{01/2024 -- 06/2024}}
           \begin{itemize*}
               \item Worked with professors to ensure students completed assignments and understand course material.
               \item Held office hours to assist students with assignments and projects.
@@ -129,7 +119,7 @@
           \begin{itemize*}
               \item Minor in Mathematics.
               \item Expected Graduation Fall 2024.
-              \item Expanded work stack to include \LaTeX, GitHub Codespaces, and Remote SSH Development.
+                    %   \item Expanded work stack to include \LaTeX, GitHub Codespaces, and Remote SSH Development.
           \end{itemize*}
     \item
           \headerrow
@@ -139,9 +129,9 @@
           \headerrow
           {\emph{College of Science and Engineering, A.S. Computer Science}}
           {\emph{2021 - 2022}}
-        %   \begin{itemize*}
-        %       \item Graduated 2022 with a 3.36 GPA.
-        %   \end{itemize*}
+          %   \begin{itemize*}
+          %       \item Graduated 2022 with a 3.36 GPA.
+          %   \end{itemize*}
 \end{itemize}
 
 
@@ -160,25 +150,25 @@
           {\emph{Senior Technical Manager, Volunteer}}
           {\emph{2022 -- Present}}
           \begin{itemize*}
-              \item Managed and maintained multiple videogame servers, set up and separated production and development servers using automated systems such as Docker with Git(Lab) integration.
-              \item Created projects varying from C/C++ server plugins to Discord bots, utilizing languages including C, TypeScript, and Python.
+              \item Managed and maintained multiple game servers.
+              \item Set up and separate production / development servers using Docker with GitLab integration.
+              \item Created projects varying from C/C\# game plugins to Discord bots.
               \item Worked with a team via GitLab to ensure tasks, goals, and issues were completed promptly.
-              \item Oversaw public-facing issue trackers, assigning priorities and working with management to assure issues were resolved and responding as appropriate.
           \end{itemize*}
     \item
           \headerrow
           {\textbf{Homelab}}
           {\href{https://github.com/MSWS/Homelab}{https://github.com/MSWS/Homelab}}
           \begin{itemize*}
-              \item Setup a self-hosted bare-metal homelab server with ProxMox.
+              \item Setup a self-hosted bare-metal Debian homelab server.
               \item Installed Docker to host services such as Uptime-Kuma, code-server, Wakapi, Grafana, and NextCloud.
               \item Utilized Composes, SQL, Cloudflared Tunneling, Dynamic DNS, and Unix.
               \item Transitioned from Dynamic DNS to Cloudflare Zero Trust for secure access.
           \end{itemize*}
 \end{itemize}
 
-% \hrule
-% \vspace{-0.4em}
+\hrule
+\vspace{-0.4em}
 
 \subsection*{Core Technical Skills}
 
@@ -186,7 +176,7 @@
     \hyphenpenalty=1000
     \begin{description*}
         \item[Services:]
-        C\#, Docker, Git, Google, Java, JavaScript / TypeScript, \LaTeX, Python, SQL, StackOverflow
+              C\#, Docker, Git, Google, Java, JavaScript / TypeScript, \LaTeX, Python, SQL, StackOverflow
         \item[GitHub:] \href{https://github.com/MSWS}{https://github.com/MSWS}
         \item[Website:] \href{https://msws.xyz}{https://msws.xyz}
     \end{description*}
