@@ -1,7 +1,7 @@
 % resume.tex
 % sample template copied from https://web.archive.org/web/20150807054721/http://www.toofishes.net/media/extra/sample-resume.pdf
 
-\documentclass[11pt,letterpaper]{article}
+\documentclass[10pt,letterpaper]{article}
 \usepackage[letterpaper,margin=0.75in,bmargin=0em]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
@@ -42,7 +42,7 @@
 \begin{document}
 
 \begin{center}
-    \vspace*{-3.5em}
+    % \vspace*{-3.5em}
     {\LARGE \textbf{Isaac K. Boaz}}
 
     \ \ Seattle, WA\ \ \textbullet
@@ -152,10 +152,10 @@
           {\emph{Senior Technical Manager, Volunteer}}
           {\emph{2022 -- Present}}
           \begin{itemize*}
-              \item Created projects varying from C/C\# game plugins to Discord bots.
-              \item Managed and maintained multiple game servers using a variety of technologies.
+              \item Created new projects and maintained existing ones for the organization.
+              \item Maintained core infrastructure including databases, web and game servers.
               \item Set up separate production / development servers using Docker with GitLab integration.
-              \item Worked with a team via GitLab to ensure tasks, goals, and issues were completed promptly.
+              \item Drove the development and deployment of servers and features with an emphasis on open-sourcing projects.
           \end{itemize*}
     \item
           \headerrow
@@ -163,8 +163,8 @@
           {\href{https://github.com/MSWS/Homelab}{https://github.com/MSWS/Homelab}}
           \begin{itemize*}
               \item Setup a self-hosted bare-metal Debian homelab server.
-              \item Utilized docker compose, SQL Datbases, Cloudflare, and Unix.
-              \item Transitioned from Dynamic DNS to Cloudflare Zero Trust for secure access.
+              \item Transitioned from Dynamic DNS to Cloudflare Zero Trust for secure remote access.
+              \item Implemented periodic system backups using \href{https://restic.net/}{Restic} with AWS and USB destinations.
               \item Installed Docker to host services such as Uptime-Kuma, code-server, Wakapi, Grafana, and NextCloud.
           \end{itemize*}
 \end{itemize}
