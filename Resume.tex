@@ -1,11 +1,10 @@
 % resume.tex
 % sample template copied from https://web.archive.org/web/20150807054721/http://www.toofishes.net/media/extra/sample-resume.pdf
 
-\documentclass[10pt,letterpaper]{article}
+\documentclass[12pt,letterpaper]{article}
 \usepackage[letterpaper,margin=0.75in,bmargin=0em]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
-\usepackage[T1]{fontenc}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{hyperref}
 
@@ -42,7 +41,7 @@
 \begin{document}
 
 \begin{center}
-    % \vspace*{-3.5em}
+    \vspace*{3.5em}
     {\LARGE \textbf{Isaac K. Boaz}}
 
     \ \ Seattle, WA\ \ \textbullet
@@ -51,41 +50,11 @@
 \end{center}
 
 \hrule
-\vspace{-0.4em}
+% \vspace{-0.4em}
 \subsection*{Experience}
 
 \begin{itemize}
     \parskip=0.1em
-
-    \item
-          \headerrow
-          {\textbf{Trimble}}
-          {\textbf{Seattle, WA}}
-          \\
-          \headerrow
-          {\emph{Software Engineering Intern}}
-          {\emph{06/2024 -- 09/2024}}
-          \begin{itemize*}
-              \item Contributed to the development of a \href{https://github.com/trimble-oss/tierceron/}{Golang-based secrets manager}.
-              \item Resolved a 4-year-old bug in a JSX-based web application within 4 days.
-              \item Identified, prepared, and deployed Windows agents for the secrets manager.
-              \item Created shell and Azure DevOps scripts to automate releases and workflows.
-              \item Worked with a Scrum team to ensure tasks were completed in a timely manner.
-          \end{itemize*}
-
-    \item
-          \headerrow
-          {\textbf{Western Washington University}}
-          {\textbf{Bellingham, WA}}
-          \\
-          \headerrow
-          {\emph{CS Teacher Assistant}}
-          {\emph{01/2024 -- 06/2024}}
-          \begin{itemize*}
-              \item Held office hours to assist students with assignments and projects.
-              \item Provided feedback and grades on assignments, projects, and quizzes.
-              \item Worked with professors to ensure students completed assignments and understood course material.
-          \end{itemize*}
 
     \item
           \headerrow
@@ -101,11 +70,38 @@
               \item Completed necessary bookkeeping and till counting to ensure accurate accounting.
               \item Stepped in where needed to fill for empty positions, student breaks, busy stations, etc.
           \end{itemize*}
+    \item
+          \headerrow
+          {\textbf{The Home Depot}}
+          {\textbf{Seattle, WA}}
+          \\
+          \headerrow
+          {\emph{Customer Service Specialist}}
+          {\emph{04/2021 -- 01/2022}}
+          \begin{itemize*}
+              \item Processed merchandise returns, customer pickups, and online orders.
+              \item Handled large customer purchases exceeding \$5000+ including bulk items.
+              \item Identified issues with orders and coordinated with manufacturers to resolve issues.
+          \end{itemize*}
+
+    \item
+          \headerrow
+          {\textbf{QFC}}
+          {\textbf{Seattle, WA}}
+          \\
+          \headerrow
+          {\emph{Courtesy Clerk}}
+          {\emph{06/2019 -- 04/2021}}
+          \begin{itemize*}
+              \item Ensured upkeep of restrooms, go-backs, aisles, etc.
+              \item Worked with a team of \textasciitilde 4 people to ensure store cleanliness and presentability.
+              \item Assisted customers with questions, locating items, and carrying merchandise out.
+          \end{itemize*}
 \end{itemize}
 
 
 \hrule
-\vspace{-0.4em}
+% \vspace{-0.4em}
 \subsection*{Education}
 
 \begin{itemize}
@@ -137,55 +133,27 @@
           %   \end{itemize*}
 \end{itemize}
 
-
 \hrule
-\vspace{-0.4em}
-\subsection*{Projects}
+% \vspace{-0.4em}
+\subsection*{Volunteer}
 
 \begin{itemize}
     \parskip=0.1em
     \item
           \headerrow
-          {\textbf{EdgeGamers Organization}}
-          {\href{https://edgegamers.com}{https://edgegamers.com}}
+          {\textbf{Seattle Police Explorers}}
+          {\href{https://www.seattle.gov/police/community-policing/community-programs/police-explorers}{https://seattle.gov}}
           \\
           \headerrow
-          {\emph{Senior Technical Manager, Volunteer}}
-          {\emph{2022 -- Present}}
+          {\emph{Police Explorer}}
+          {\emph{11/2018 -- 06/2021}}
           \begin{itemize*}
-              \item Developed projects including C/C\# server plugins, statistical analysis, quarterly reports, and maintenance.
-              \item Managed and maintained multiple videogame servers, set up and separated production / development
-                    servers using automated systems including Docker, GitLab, and GitHub.
-              \item Coordinated with a team of 26 people via GitLab to ensure tasks, goals, and issues were completed promptly.
-              \item Managed public-facing issue trackers, working with divisional managers to assure issues
-                    were marked, responded to, and resolved as appropriate.
-              \item Documented new policies, procedures, and systems to allow for easier onboarding and training of new members.
-          \end{itemize*}
-    \item
-          \headerrow
-          {\textbf{Homelab}}
-          {\href{https://github.com/MSWS/Homelab}{https://github.com/MSWS/Homelab}}
-          \begin{itemize*}
-              \item Setup a self-hosted bare-metal Debian homelab server.
-              \item Transitioned from Dynamic DNS to Cloudflare Zero Trust for secure remote access.
-              \item Implemented periodic system backups using \href{https://restic.net/}{Restic} with AWS and USB destinations.
-              \item Installed Docker to host services such as Uptime-Kuma, code-server, Wakapi, Grafana, and NextCloud.
+              \item Volunteered 10+ hours a month towards public events including banquest, SeaFair, etc.
+              \item Attended educational meetings twice a month, learning basic police strategies, policies, and enforcement.
           \end{itemize*}
 \end{itemize}
 
 % \hrule
 % \vspace{-0.4em}
-
-\subsection*{Miscellaneous}
-
-\begin{indentsection}{\parindent}
-    \hyphenpenalty=1000
-    \begin{description*}
-        \item[Skills:]
-              C\#, Docker, Git, Google, Java, JavaScript / TypeScript, \LaTeX, Python, SQL, StackOverflow
-        \item[GitHub:] \href{https://github.com/MSWS}{https://github.com/MSWS}
-        \item[Website:] \href{https://msws.xyz}{https://msws.xyz}
-    \end{description*}
-\end{indentsection}
 
 \end{document}
