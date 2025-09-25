@@ -1,8 +1,7 @@
 % resume.tex
-% sample template copied from https://web.archive.org/web/20150807054721/http://www.toofishes.net/media/extra/sample-resume.pdf
 
 \documentclass[10pt,letterpaper]{article}
-\usepackage[letterpaper,margin=0.75in,bmargin=0em]{geometry}
+\usepackage[letterpaper,margin=0.75in,bmargin=0em,tmargin=4em]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
 \usepackage[T1]{fontenc}
@@ -12,6 +11,7 @@
 \usepackage{libertine}
 \usepackage{libertinust1math}
 \usepackage[T1]{fontenc}
+\usepackage{multicol}
 
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
@@ -42,154 +42,121 @@
 \begin{document}
 
 \begin{center}
-    % \vspace*{-2.5em}
-    {\LARGE \textbf{Isaac K. Boaz}}
-
-    \ \ Seattle, WA\ \ \textbullet
-    \ \ (208) 473-6497\ \ \textbullet
-    \ \ isaac@kboaz.dev
+  {\LARGE \textbf{Isaac K. Boaz}}\\[1em]
+  Seattle, WA\ \ \textbullet
+  \ \ (208) 473-6497\ \ \textbullet
+  \ \ \href{mailto:isaac@kboaz.dev}{isaac@kboaz.dev} \\
+  \href{https://kboaz.dev}{https://kboaz.dev}\ \textbullet
+  \ \ \href{https://kboaz.dev/github}{https://kboaz.dev/github}
 \end{center}
 
 \hrule
-\vspace{-0.4em}
 \subsection*{Experience}
 
 \begin{itemize}
-    \parskip=0.1em
+  \item
+        \headerrow
+        {\textbf{Trimble}}
+        {\textbf{Seattle, WA}}
+        \\
+        \headerrow
+        {\emph{Software Engineering Intern}}
+        {\emph{06/2024 -- 09/2024}}
+        \begin{itemize*}
+          \item Collaborated with a Scrum team to prioritize tasks and optimize workflows.
+          \item Worked with Bash and Azure to automate releases and workflows, utilizing DevOps principles for CI / CD.
+          \item Resolved a four-year-old bug that affected thousands of clients in a JSX-based web application within 4 days.
+          \item Contributed to the development of a \href{https://github.com/trimble-oss/tierceron/}{Go secrets manager}, reinforcing security, architecture, and maintainability.
+        \end{itemize*}
 
-    \item
-          \headerrow
-          {\textbf{Trimble}}
-          {\textbf{Seattle, WA}}
-          \\
-          \headerrow
-          {\emph{Software Engineering Intern}}
-          {\emph{06/2024 -- 09/2024}}
-          \begin{itemize*}
-              \item Resolved a 4-year-old bug in a JSX-based web application within 4 days.
-              \item Collaborated with a Scrum team to prioritize tasks and optimize workflows.
-              \item Contributed to the development of a \href{https://github.com/trimble-oss/tierceron/}{Golang-based secrets manager}, reinforcing modularity, robust architecture, and maintainability.
-              \item Created shell and Azure DevOps scripts to automate releases and workflows, incorporating DevOps principles for CI and CD.
-          \end{itemize*}
+  \item
+        \headerrow
+        {\textbf{Western Washington University}}
+        {\textbf{Bellingham, WA}}
+        \\
+        \headerrow
+        {\emph{Computer Science Teacher Assistant}}
+        {\emph{01/2024 -- 06/2024}}
+        \begin{itemize*}
+          \item Designed unit tests to assist with grading student work.
+          \item Wrote \LaTeX\ PDFs for homework assignments and answer sheets.
+          \item Provided feedback and grades on assignments, projects, and quizzes.
+          \item Worked with professors to ensure students completed assignments and understood course material.
+        \end{itemize*}
 
-    \item
-          \headerrow
-          {\textbf{Western Washington University}}
-          {\textbf{Bellingham, WA}}
-          \\
-          \headerrow
-          {\emph{Computer Science Teacher Assistant}}
-          {\emph{01/2024 -- 06/2024}}
-          \begin{itemize*}
-              \item Held office hours to assist students with assignments and projects.
-              \item Provided feedback and grades on assignments, projects, and quizzes.
-              \item Worked with professors to ensure students completed assignments and understood course material.
-          \end{itemize*}
-
-    % \item
-    %       \headerrow
-    %       {\textbf{Nordstrom}}
-    %       {\textbf{Seattle, WA}}
-    %       \\
-    %       \headerrow
-    %       {\emph{Logistics Processor}}
-    %       {\emph{06/2023 -- 09/2023}}
-    %       \begin{itemize*}
-    %           \item Gained quick familiarity of store layout to efficiently gather merchandise.
-    %           \item Coordinated with teammates to reach goals, delegate tasks, and meet quotas.
-    %           \item Processed 15+ customer orders per day, ensuring accuracy and quality of order packing.
-    %       \end{itemize*}
 \end{itemize}
 
-
 \hrule
-\vspace{-0.4em}
-\subsection*{Education}
-
-\begin{itemize}
-    \parskip=0.1em
-
-    \item
-          \headerrow
-          {\textbf{Western Washington University}}
-          {\textbf{Bellingham, WA}}
-          \\
-          \headerrow
-          {\emph{College of Science and Engineering, B.S. Computer Science}}
-          {\emph{2022 -- 2024}}
-          \begin{itemize*}
-              \item Minor in Mathematics.
-              \item Graduated December 2024.
-                    %   \item Expanded work stack to include \LaTeX, GitHub Codespaces, and Remote SSH Development.
-          \end{itemize*}
-    \item
-          \headerrow
-          {\textbf{South Seattle College}}
-          {\textbf{Seattle, WA}}
-          \\
-          \headerrow
-          {\emph{College of Science and Engineering, A.S. Computer Science}}
-          {\emph{2021 - 2022}}
-          %   \begin{itemize*}
-          %       \item Graduated 2022 with a 3.36 GPA.
-          %   \end{itemize*}
-\end{itemize}
-
-
-\hrule
-\vspace{-0.4em}
 \subsection*{Projects}
 
 \begin{itemize}
-    \parskip=0.1em
-    \item
-          \headerrow
-          {\textbf{EdgeGamers Organization}}
-          {\href{https://edgegamers.com}{https://edgegamers.com}}
-          \\
-          \headerrow
-          {\emph{Software Engineer, Volunteer}}
-          {\emph{2022 -- Present}}
-          \begin{itemize*}
-              \item Developed projects including Java \& C\# server plugins and maintenance.
-              \item Managed and maintained multiple videogame servers, set up and separated production / development
-                    servers using automated systems including Docker, GitLab, and GitHub.
-              \item Coordinated with a team of 26 people via GitLab to ensure tasks, goals, and issues were completed promptly.
-              \item Managed public-facing issue trackers, working with divisional managers to assure issues
-                    were marked, responded to, and resolved as appropriate.
-              \item Documented new policies, procedures, and systems to allow for easier onboarding and training of new members.
-          \end{itemize*}
-    \item
-          \headerrow{\textbf{Jailbreak}}{\href{https://github.com/edgegamers/Jailbreak}{https://github.com/edgegamers/Jailbreak}}
-          \begin{itemize*}
-              \item A Counter-Strike 2 server plugin written in C\# to allow for the Jailbreak gamemode to be easily played.
-              \item Integrated with a C++ based MetaMod plugin using the CounterStrike Sharp framework.
-              \item Utilizes MySQL for player state and stats management.
-          \end{itemize*}
-    \item
-          \headerrow
-          {\textbf{AdminMode}}
-          {\href{https://git.msws.xyz/MS/admin-mode}{https://git.msws.xyz/MS/admin-mode}}
-          \begin{itemize*}
-              \item A Minecraft plugin written in Java that allows server moderators / administrators to easily enter \emph{admin mode}.
-              \item Entering / leaving \emph{admin mode} preserves player state to reduce interruptions.
-              \item Integrates with \href{https://www.spigotmc.org/resources/discordsrv.18494/}{DiscordSRV} for transparent logging to upper management.
-          \end{itemize*}
+  \item
+        \headerrow
+        {\textbf{EdgeGamers Organization}}
+        {\href{https://edgegamers.com}{https://edgegamers.com}}
+        \\
+        \headerrow
+        {\emph{Software Engineer, Volunteer}}
+        {\emph{2022 -- Present}}
+        \begin{itemize*}
+          \item Developed and maintained projects including Java \& C\# server plugins.
+          \item Coordinated with a team of 26 to ensure tasks, goals, and issues were completed promptly.
+          \item Documented new policies, procedures, and systems for onboarding and training of new members.
+          \item Maintained servers with automated production / development
+                pipelines using Docker, GitLab, and GitHub.
+        \end{itemize*}
+  \item
+        \headerrow
+        {\textbf{Trouble in Terrorist Town}}
+        {\href{https://kboaz.dev/gh/TTT}{https://kboaz.dev/gh/TTT}}
+        \begin{itemize*}
+          \item Abstraction of platform-specific implementation with unit testing.
+          \item Achieved automated build, test, and release pipelines with GitHub Actions.
+          \item An implementation of TTT written in C\# focused on modularity and multi-platform support.
+        \end{itemize*}
+  \item
+        \headerrow{\textbf{Jailbreak}}{\href{https://github.com/edgegamers/Jailbreak}{https://github.com/edgegamers/Jailbreak}}
+        \begin{itemize*}
+          \item Utilizes MySQL for player statistics management.
+          \item Integrated with a C++ based MetaMod plugin using the CounterStrike Sharp framework.
+          \item A Counter-Strike 2 server plugin written in C\# to allow for the Jailbreak gamemode to be played.
+        \end{itemize*}
 \end{itemize}
 
 \hrule
-\vspace{-0.4em}
+\subsection*{Education}
 
-\subsection*{Miscellaneous}
+\begin{itemize}
+  \item
+        \headerrow
+        {\textbf{Western Washington University}}
+        {\textbf{Bellingham, WA}}
+        \\
+        \headerrow
+        {\emph{College of Science and Engineering, B.S. Computer Science}}
+        {\emph{2022 -- 2024}}
+        \begin{itemize*}
+          \item Minor in Mathematics.
+          \item Graduated December 2024.
+        \end{itemize*}
+  \item
+        \headerrow
+        {\textbf{South Seattle College}}
+        {\textbf{Seattle, WA}}
+        \\
+        \headerrow
+        {\emph{College of Science and Engineering, A.S. Computer Science}}
+        {\emph{2021 - 2022}}
+\end{itemize}
+
+\hrule
+\subsection*{Technical Skills}
 
 \begin{indentsection}{\parindent}
-    \hyphenpenalty=1000
-    \begin{description*}
-        \item[Languages:] C\#, Golang, Java, JavaScript / TypeScript, SQL
-        \item[Development Stacks:] DevOps, Infrastructure as Code (Docker), CI/CD tools (GitHub, GitLab, Azure)
-        \item[GitHub:] \href{https://github.com/MSWS}{https://github.com/MSWS}
-        \item[Website:] \href{https://msws.xyz}{https://msws.xyz}
-    \end{description*}
+  \begin{description*}
+    \item[Languages:] C\#, Golang, Java, JavaScript / TypeScript, SQL
+    \item[DevOps Tools:] Linux (Bash, scripting, utilities), Docker, Git, CI/CD (GitHub, GitLab, Azure)
+    \item[Development:] OOP, Functional Programming, Dynamic Programming, Unit \& Integration Testing
+  \end{description*}
 \end{indentsection}
-
 \end{document}
